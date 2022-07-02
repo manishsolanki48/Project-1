@@ -1,0 +1,929 @@
+:root{
+    --primaryblue: #21243d;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    line-height: 1.5;
+}
+
+.topsection{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primaryblue);
+    padding: 14px 34px;
+}
+.logo{
+    font-size: 30px;
+}
+.logo img{
+    width: 350px;
+}
+#menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    scroll-behavior: smooth;
+}
+#menu li{
+    list-style: none;
+}
+#menu li a{
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    margin: 0px 20px;
+}
+
+/* .serch-btn{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    display: none;
+}
+.serch-btn:hover{
+    color: black;
+    background: transparent;
+    border: 1px solid black;
+} */
+.bannersection{
+    width: 100%;
+    background:url(images/banner-bg.jpg) no-repeat 0 0;
+    background-size: cover;
+    padding-bottom: 160px;
+}
+.bannertext h2{
+   font-size: 140px;
+   padding: 180px 0px 81px 53px;
+}
+.bannertext p{
+    font-size: 30px;
+    padding-bottom: 53px;
+    margin-left: 45px;
+}
+.banner-btn{
+    text-decoration: none;
+    margin: 54px 0px 152px 46px;
+    font-size: 25px;
+    color: white;
+    background-color: #21243d;
+    padding: 16px 80px;
+    border-radius: 30px;
+}
+.banner-btn:hover{
+    color: black;
+    background: white;
+    border: 1px solid black;
+}
+.blogsection{
+    background: url(images/blogsection-logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #21243d;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 125px;
+}
+
+.blogfolder h2{
+    font-size: 64px;
+    text-align: center;
+    margin: 90px 0px 57px 0px;
+}
+.blogfolderPara{
+    font-size: 25px;
+    text-align: center;
+    max-width: 687px;
+    margin: auto;
+}
+.blog{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.blogInnerWrapper{
+    width: 300px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+.blogInnerWrapper img{
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 21px;
+}
+.blogInnerWrapper h4{
+    font-size: 29px;
+    text-align: center;
+    margin-bottom: 28px;
+}
+.blogInnerWrapper p{
+    font-size: 16px;
+    text-align: center;
+}
+
+.servicesection{
+    background: url(images/image5.png);
+    background-repeat: no-repeat;
+    padding-top: 192px;
+    background-color: #ffd17e;
+    padding-bottom: 143px;
+}
+.servicefolder{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 100px 0px 0px;
+}
+.serviceleft{
+    width: 50%;
+    margin-left: 166px;
+    position: relative;
+    z-index: 1;
+}
+
+img.ServiceImageAfter{
+    width: 191px;
+    position: absolute;
+    top: -55px;
+    left: -55px;
+    z-index: -1;
+}
+.serviceright{
+    width: 50%;
+    margin-top: 25px;
+    margin-right: 50px;
+}
+.serviceleft .ServiceImage{
+    width: 482px;
+    border-radius: 50%;
+}
+.serviceright h2{
+    font-size: 75px;
+    color: #21243d;
+    margin-bottom: 59px;
+}
+.serviceright p{
+    font-size: 30px;
+    color: #21243d;
+    margin-bottom: 75px;
+}
+.service-btn{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    background-color: #21243d;
+    padding: 16px 80px;
+    border-radius: 30px;
+}
+.service-btn:hover{
+    color: black;
+    background: transparent;
+    border: 1px solid black;
+}
+.contenarsection{
+    background: url(images/image10.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #21243d;
+}
+.contenarfolder h2{
+    font-size: 62px;
+    text-align: center;
+    padding-top: 105px;
+    padding-bottom: 36px;
+}
+.contenarfolder p{
+    font-size: 25px;
+    text-align: center;
+}
+.image-folder{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 94px;
+    padding-bottom: 181px;
+}
+.contenarimage {
+    width: 280px;
+    height: 280px;
+    border: 8px solid white;
+    border-radius: 100%;
+    margin: 20px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenarimage .counterNumber{
+    font-size: 75px;
+    color: white;
+    font-weight: 700px;
+}
+.contenarimage .counterInnerTitle{
+    font-size: 42px;
+    color: white;
+}
+.holdersection{
+    background: url(images/image11.png) no-repeat 0 0;
+    background-size: cover;
+    background-color: #ffd17e;
+    padding-bottom: 141px;
+}
+.holdertext{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.holderleft{
+    width: 50%;
+    margin: 251px 0px 0px 128px;
+}
+.holderright{
+    width: 50%;
+    margin: 195px 0px 0px 50px;
+    position: relative;
+    z-index: 1;
+}
+.holderleft h2{
+    font-size: 75px;
+    color: #21243d;
+    margin-bottom: 59px;
+}
+.holderleft p{
+    font-size: 30px;
+    color: #21243d;
+    margin-bottom: 75px;
+}
+.holder-btn{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    background-color: #21243d;
+    padding: 16px 80px;
+    border-radius: 30px;
+}
+.holder-btn:hover{
+    color: black;
+    background: transparent;
+    border: 1px solid black;
+}
+.holderright img{
+    width: 463px;
+    border-radius: 50%;
+}
+img.holderImageAfter{
+    width: 194px;
+    position: absolute;
+    top: -55px;
+    right: 91px;
+    z-index: -1;
+}
+.gallerysection{
+    background: url(images/galleryimage2.png) no-repeat 0 0;
+    background-size: cover;
+}
+.gallreytext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.gallreytext img{
+    width: 243px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 147px;
+    margin-bottom: 44px;
+}
+
+.gallerysection .paragallery{
+    font-size: 42px;
+    max-width: 1027px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 53PX;
+}
+.gallreytext h2{
+    font-size: 44px;
+    text-align: center;
+    margin-bottom: 137px;
+}
+.boxsection{
+    background: url(images/sectionimage1.png) no-repeat 0 0;
+    background-size:  cover;
+    background-color: #ffd17e;
+}
+
+.boxsection .textpara{
+     font-size: 30px;
+    text-align: center;
+    color: #21243d;
+    max-width: 867px;
+    margin: auto;
+    margin-bottom: 85px;
+}
+
+.boxtext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+.boxtext h2{
+    font-size: 72px;
+    text-align: center;
+    color: #21243d;
+    margin: 169px 0px 65px 0px;
+}
+.box-btn{
+    text-align: center;
+    margin-bottom: 310px;
+}
+.input-btn{
+    font-size: 30px;
+    width: 630px;
+    padding: 20px 30px;
+    border-radius: 40px;
+    position: relative;
+}
+.submit-btn{
+   text-decoration: none;
+   color: white;
+   font-size: 25px;
+   padding: 25px 36px;
+   border-radius: 40px;
+   background-color: #21243d;
+   position: absolute;
+   right: 25%;
+}
+.footersection{
+    background-color: black;
+    padding: 100px 0px;
+}
+.footertext{
+    max-width: 1266px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.footer h2{
+    font-size: 32px;
+    margin: 0px 0px 40px 0px;    
+}
+.footer p{
+    max-width: 400px;
+    font-size: 23px;
+    margin-bottom: 35px;
+}
+.icons a{
+    font-size: 18px;
+    color: black;
+    background-color: white;
+    padding: 12px;
+    margin: 0px 5px;
+    border-radius: 50%;
+}
+.boxfolder{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.box{
+    padding: 0px 30px;
+}
+.box h2{
+   font-size: 31px;
+   margin-bottom: 39px;
+}
+.box li{
+    list-style: none;
+}
+.box li a{
+    color: white;
+    font-size: 23px;
+    text-decoration: none;
+    line-height: 35px;
+}
+
+#show-btn{
+    display: none;
+}
+.formsection{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    background-color: black;
+    display: none;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 600px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 40px;
+    transform: translateY(-50%);
+    background-color: rgb(36, 36, 226);
+}
+.form h2{
+    font-size: 48px;
+    margin: 10px 0px 10px 0px;
+}
+.form::after{
+    position: relative;
+}
+.form input{
+    font-size: 18px;
+    padding: 8px 12px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 0px 12px 10px 0px;
+}
+.form textarea{
+    width: 510px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.inner-input{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0px 10px 10px 0px;
+}
+.closeForm{
+    font-size: 30px;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    color: black;
+}
+.form-btn{
+    font-size: 25px;
+    padding: 10px 18px;
+    background-color: orangered;
+    margin: 20px 0px 0px 0px;
+    border-radius: 8px;
+    width: 510px;
+}
+
+
+/* Tablet CSS Start */
+@media screen and (max-width:768px){
+    .topsection{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        bottom: 0;
+        right: 0;
+        height: 100vh;
+        /* display: none; */
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        z-index: 2;
+        -webkit-transition: all ease-in-out .15s;
+        -moz-transition: all ease-in-out .15s;
+        transition: all ease-in-out .15s;
+    }
+
+    .openmenu{
+        left: 0%;
+        margin: auto;
+    }
+
+   #menu{
+       width: 100%;
+       background-color: #21243d;
+       display: flex;
+       align-items: center;
+       flex-direction: column;
+       justify-content: center;
+   }
+   #menu li{
+       list-style: none;
+       padding: 30px;
+   }
+   #menu li a{
+       text-decoration: none;
+       font-size: 60px;
+       padding: 40px 0px;
+   }
+   #show-btn{
+        display: block;
+        position: absolute;
+        left: auto;
+        top: 25px;
+        right: 25px;
+        font-size: 48px;
+        z-index: 3;
+    }
+   .bannersection{
+        width: 100%;
+        background:url(images/banner-bg.jpg) no-repeat 0 0;
+        background-size: cover;
+        padding-bottom: 160px;
+    }
+   .bannertext h2{
+        font-size: 100px;
+        padding: 180px 0px 30px 53px;
+    }
+    .bannertext p{
+        font-size: 30px;
+        padding-bottom: 53px;
+        margin-left: 45px;
+        line-height: 40px;
+    }
+    .banner-btn{
+        text-decoration: none;
+        margin: 54px 0px 152px 46px;
+        font-size: 30px;
+        color: white;
+        background-color: #21243d;
+        padding: 12px 40px;
+        border-radius: 30px;
+    }
+    .servicefolder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .serviceleft .ServiceImage{
+        width: 400px;
+        border-radius: 50%;
+    }
+    .serviceright{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+    }
+    .serviceright h2{
+        font-size: 55px;
+        margin-top: 30px;
+    }
+    .service-btn{
+        width: 300px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        background-color: #21243d;
+        padding: 16px 30px;
+        border-radius: 30px;
+    }
+    .service-btn:hover{
+        color: black;
+        background: transparent;
+        border: 1px solid black;
+    }
+    .image-folder{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 39px;
+        padding-bottom: 87px;
+    }
+    .contenarimage{
+        margin: 20px auto;
+        padding: 20px; 
+    }
+    .contenarfolder p {
+        font-size: 26px;
+        text-align: center;
+    }
+    .holdertext{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .holderleft{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: -1px 0px 150px 0px;
+    }
+    .holderleft {
+        width: 50%;
+        margin: 58px 0px 0px 52px;
+    }
+    .holderright{
+        padding-top: 200px;
+    }
+    .holderright {
+        width: 50%;
+        margin: 113px 0px 0px -20px;
+        position: relative;
+        z-index: 1;
+    }
+    .holderleft h2{
+        font-size: 60px;
+    }
+    .holderleft p{
+        font-size: 30px;
+    }
+    .holder-btn{
+        width: 300px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        background-color: #21243d;
+        padding: 16px 30px;
+        border-radius: 30px;
+    }
+    .holder-btn:hover{
+        color: black;
+        background: transparent;
+        border: 1px solid black;
+    }
+    .holderright img{
+        width: 400px;
+        border-radius: 50%;
+    }
+    img.holderImageAfter {
+        width: 194px;
+        position: absolute;
+        top: 20%;
+        left: -20%;
+        z-index: -1;
+    }
+    .input-btn{
+        position: relative;
+    }
+    .submit-btn{
+        position: absolute;
+        right: 8%;
+    }
+    .footertext{
+        display: flex;
+        flex-direction: column;
+    }
+    .boxfolder{
+        display: flex;
+        flex-direction: column;
+        margin: 100px 200px 100px 0px;
+    }
+    .boxfolder .box{
+        margin: 20px;
+    }
+    .gallerysection .paragallery {
+        font-size: 22px;
+        max-width: 1027px;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 53PX;
+    }
+    .gallreytext h2 {
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 137px;
+    }
+    .boxsection .textpara {
+        font-size: 27px;
+        text-align: center;
+        color: #21243d;
+        max-width: 867px;
+        margin: auto;
+        margin-bottom: 85px;
+    }
+    .boxtext h2 {
+        font-size: 72px;
+        text-align: center;
+        color: #21243d;
+        margin: 128px 0px 65px 0px;
+    }
+    .box-btn {
+        text-align: center;
+        margin-bottom: 204px;
+    }
+    .input-btn {
+        font-size: 30px;
+        width: 514px;
+        padding: 20px 30px;
+        border-radius: 40px;
+        position: relative;
+    }
+    .submit-btn {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        padding: 28px 36px;
+        border-radius: 40px;
+        background-color: #21243d;
+        position: absolute;
+        right: 16%;
+        width: 150px;
+    }
+    .boxfolder {
+        display: flex;
+        flex-direction: column;
+        margin: 100px 200px -32px 0px;
+    }
+}
+
+/* Actullay Mobile Devices */
+@media screen and (max-width:767px){
+    .serviceleft .ServiceImage{
+        width: 250px;
+        border-radius: 50%;
+        
+    }
+    .serviceleft .ServiceImageAfter{
+        width: 100px;
+        position: absolute;
+        left: -50%;
+    }
+    .serviceleft{
+        width: 100%;
+        margin-left: auto;
+        text-align: center;
+    }
+    .serviceright h2{
+        font-size: 40px;
+    }
+    .serviceright p{
+        font-size: 20px;
+    }
+    .service-btn{
+        font-size: 20px;
+        width: 200px;
+    }
+    .holderright img{
+        width: 250px;
+    }
+    .holderright .holderImageAfter {
+        width: 100px;
+        position: absolute;
+        top: 39%;
+        left: -21%;
+    }
+    .holderleft{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+    .holderleft h2{
+        font-size: 40px;
+        margin-top: 20px;
+    }
+    .holderleft p{
+        font-size: 20px;
+    }
+    .holder-btn{
+        font-size: 20px;
+        width: 200px;
+    }
+    .input-btn{
+        width: 300px;
+        padding: 15px;
+        font-size: 20px;
+        position: relative;
+    }
+    .submit-btn{
+        text-align: center;
+        font-size: 20px;
+        width: 130px;
+        padding: 16px;
+        position: absolute;
+        right: 2%;
+    }
+    .footer p {
+        font-size: 16px;
+        margin-bottom: 35px;
+        line-height: 1.5;
+    }
+    .box h2{
+        font-size: 30px;
+    }
+    .box ul a{
+        font-size: 14px;
+    }
+    .boxfolder{
+        padding-left: 25px;
+    }
+    .boxtext h2{
+        font-size: 45px; 
+    }
+    .boxtext p{
+        font-size: 20px; 
+    }
+}
+
+@media screen and (max-width:912px){
+    .input-btn{
+        position: relative;
+    }
+    .submit-btn{
+        position: absolute;
+        right: 10%;
+    }
+    .holderleft {
+        width: 50%;
+        margin: 49px 0px 0px 21px;
+    }
+    .holderright {
+        width: 50%;
+        margin: 209px 39px 0px 0px;
+        position: relative;
+        z-index: 1;
+    }
+    .holderright img {
+        width: 439px;
+        border-radius: 50%;
+    }
+    img.holderImageAfter {
+        width: 194px;
+        position: absolute;
+        top: 143px;
+        right: 0px;
+        z-index: -1;
+    }
+    .serviceleft {
+        width: 50%;
+        margin-left: 23px;
+        position: relative;
+        z-index: 1;
+    }
+    .serviceright {
+        width: 50%;
+        margin: 25px 0px 0px 14px;
+    }
+    .serviceleft .ServiceImage {
+        width: 399px;
+        border-radius: 50%;
+    }
+    img.ServiceImageAfter {
+        width: 154px;
+        position: absolute;
+        top: -26px;
+        left: -56px;
+        z-index: -1;
+    }
+    .image-folder {
+        display: flex;
+        justify-content: center;
+        padding-top: 94px;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+    }
+    .footer{
+        margin-left: 25px;
+    }
+    .footer h2 {
+        font-size: 32px;
+        margin: 0px 0px 60px 0px;
+    }
+    .footer p{
+       margin-bottom: 50px;
+    }
+    .gallreytext {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 50px;
+    }
+    .holderleft p {
+        font-size: 30px;
+        color: #21243d;
+        margin-bottom: 75px;
+    }
+    .holderleft h2 {
+        font-size: 75px;
+        color: #21243d;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width:360px){
+
+}
